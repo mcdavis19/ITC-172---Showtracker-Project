@@ -31,7 +31,7 @@ public interface IShowTrackerService
     List<ShowInfo> GetShowsByArtist(string artistName);
 
     [OperationContract]
-    List<ShowInfo> GetShowsForFanArtists(int fanKey);
+    List<ShowInfo> GetShowsByFanArtists(int fanKey);
 
     [OperationContract]
     int AddFanArtist(int fanKey, string artistName);

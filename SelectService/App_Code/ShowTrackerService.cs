@@ -104,7 +104,7 @@ public class ShowTrackerService : IShowTrackerService
         return listShows;
     }
 
-    public List<ShowInfo> GetShowsForFanArtists(int fanKey)
+    public List<ShowInfo> GetShowsByFanArtists(int fanKey)
     {
         //get the fan
         Fan myFan = (from f in db.Fans
