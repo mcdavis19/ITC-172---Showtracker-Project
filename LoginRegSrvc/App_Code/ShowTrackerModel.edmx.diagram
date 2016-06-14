@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="23c2102bad324e45823af626dfb2a947" Name="Diagram1">
+        <EntityTypeShape EntityType="ShowTrackerModel.Artist" Width="1.5" PointX="4.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShowTrackerModel.Fan" Width="1.5" PointX="4.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShowTrackerModel.FanLogin" Width="1.5" PointX="2.5" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShowTrackerModel.LoginHistory" Width="1.5" PointX="4.875" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShowTrackerModel.Show" Width="1.5" PointX="2.625" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShowTrackerModel.ShowDetail" Width="1.5" PointX="2.625" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShowTrackerModel.Venue" Width="1.5" PointX="0.5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShowTrackerModel.VenueLogin" Width="1.5" PointX="0.5" PointY="4.875" IsExpanded="true" />
+        <AssociationConnector Association="ShowTrackerModel.FK__ShowDetai__Artis__300424B4" ManuallyRouted="false" />
+        <AssociationConnector Association="ShowTrackerModel.FK__FanLogin__FanKey__2E1BDC42" ManuallyRouted="false" />
+        <AssociationConnector Association="ShowTrackerModel.FK__Show__VenueKey__2F10007B" ManuallyRouted="false" />
+        <AssociationConnector Association="ShowTrackerModel.FK__ShowDetai__ShowK__30F848ED" ManuallyRouted="false" />
+        <AssociationConnector Association="ShowTrackerModel.FK__VenueLogi__Venue__31EC6D26" ManuallyRouted="false" />
+        <AssociationConnector Association="ShowTrackerModel.FanArtist" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
