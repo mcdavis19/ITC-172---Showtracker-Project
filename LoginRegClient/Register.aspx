@@ -22,20 +22,20 @@
              <asp:MenuItem NavigateUrl="AddNewShow.aspx" Text="Add New Show"/>
              <asp:MenuItem NavigateUrl="AddNewArtist.aspx" Text="Add New Artist"/>
          </Items> 
-        <StaticMenuItemStyle HorizontalPadding="20px" />    
+        <StaticMenuItemStyle HorizontalPadding="55px" />    
     </asp:Menu>
     <asp:Menu ID="fanMenu" class="menu" runat="server" Orientation="Horizontal">
-        <Items>   
-            
+        <Items>     
              <asp:MenuItem NavigateUrl="FanLogin.aspx" Text="Fan Login"/>
              <asp:MenuItem NavigateUrl="FanRegistration.aspx" Text="Fan Registration"/>
              <asp:MenuItem NavigateUrl="Listings.aspx" Text="Show and Artist Listings"/>
              <asp:MenuItem NavigateUrl="FollowArtists.aspx" Text="Follow Artists"/>
+            <asp:MenuItem NavigateUrl="ShowsByFanArtist.aspx" Text="Your Artists' Shows"/>
         </Items>
-        <StaticMenuItemStyle  HorizontalPadding="20px" />     
+        <StaticMenuItemStyle HorizontalPadding="35px" />     
     </asp:Menu>
     </div>
-    <div>
+    <div id="wrapper">
         <h1>New Venue Registration</h1>
         <table>
             <tr>

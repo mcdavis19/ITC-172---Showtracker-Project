@@ -38,11 +38,11 @@
   <wsdl:message name="IShowTrackerService_GetShowsByArtist_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetShowsByArtistResponse" />
   </wsdl:message>
-  <wsdl:message name="IShowTrackerService_GetShowsForFanArtists_InputMessage">
-    <wsdl:part name="parameters" element="tns:GetShowsForFanArtists" />
+  <wsdl:message name="IShowTrackerService_GetShowsByFanArtists_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetShowsByFanArtists" />
   </wsdl:message>
-  <wsdl:message name="IShowTrackerService_GetShowsForFanArtists_OutputMessage">
-    <wsdl:part name="parameters" element="tns:GetShowsForFanArtistsResponse" />
+  <wsdl:message name="IShowTrackerService_GetShowsByFanArtists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetShowsByFanArtistsResponse" />
   </wsdl:message>
   <wsdl:message name="IShowTrackerService_AddFanArtist_InputMessage">
     <wsdl:part name="parameters" element="tns:AddFanArtist" />
@@ -71,9 +71,9 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IShowTrackerService/GetShowsByArtist" message="tns:IShowTrackerService_GetShowsByArtist_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IShowTrackerService/GetShowsByArtistResponse" message="tns:IShowTrackerService_GetShowsByArtist_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="GetShowsForFanArtists">
-      <wsdl:input wsaw:Action="http://tempuri.org/IShowTrackerService/GetShowsForFanArtists" message="tns:IShowTrackerService_GetShowsForFanArtists_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IShowTrackerService/GetShowsForFanArtistsResponse" message="tns:IShowTrackerService_GetShowsForFanArtists_OutputMessage" />
+    <wsdl:operation name="GetShowsByFanArtists">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShowTrackerService/GetShowsByFanArtists" message="tns:IShowTrackerService_GetShowsByFanArtists_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShowTrackerService/GetShowsByFanArtistsResponse" message="tns:IShowTrackerService_GetShowsByFanArtists_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="AddFanArtist">
       <wsdl:input wsaw:Action="http://tempuri.org/IShowTrackerService/AddFanArtist" message="tns:IShowTrackerService_AddFanArtist_InputMessage" />
@@ -127,8 +127,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="GetShowsForFanArtists">
-      <soap:operation soapAction="http://tempuri.org/IShowTrackerService/GetShowsForFanArtists" style="document" />
+    <wsdl:operation name="GetShowsByFanArtists">
+      <soap:operation soapAction="http://tempuri.org/IShowTrackerService/GetShowsByFanArtists" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

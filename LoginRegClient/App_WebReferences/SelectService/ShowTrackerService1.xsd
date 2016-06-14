@@ -66,17 +66,17 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="GetShowsForFanArtists">
+  <xs:element name="GetShowsByFanArtists">
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="fanKey" type="xs:int" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="GetShowsForFanArtistsResponse">
+  <xs:element name="GetShowsByFanArtistsResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetShowsForFanArtistsResult" nillable="true" type="q6:ArrayOfShowInfo" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetShowsByFanArtistsResult" nillable="true" type="q6:ArrayOfShowInfo" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

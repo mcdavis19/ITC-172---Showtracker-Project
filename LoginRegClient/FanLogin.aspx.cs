@@ -27,7 +27,7 @@ public partial class FanLogin : System.Web.UI.Page
         if(key != -1)
         {
             Session["UserKey"] = key;
-            Response.Redirect("Listings.aspx");
+            Response.Redirect("ShowsByFanArtist.aspx");
         }
         else
         {
