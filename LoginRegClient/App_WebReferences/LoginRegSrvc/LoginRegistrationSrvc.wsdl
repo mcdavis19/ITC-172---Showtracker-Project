@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="LoginRegistrationSrvc" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:13363/LoginRegistrationSrvc.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:13363/LoginRegistrationSrvc.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:13363/LoginRegistrationSrvc.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ILoginRegistrationSrvc_LoginVenue_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoginVenue" />
+  </wsdl:message>
+  <wsdl:message name="ILoginRegistrationSrvc_LoginVenue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginVenueResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILoginRegistrationSrvc_RegisterVenue_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterVenue" />
+  </wsdl:message>
+  <wsdl:message name="ILoginRegistrationSrvc_RegisterVenue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterVenueResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILoginRegistrationSrvc_LoginFan_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoginFan" />
+  </wsdl:message>
+  <wsdl:message name="ILoginRegistrationSrvc_LoginFan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginFanResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILoginRegistrationSrvc_RegisterFan_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterFan" />
+  </wsdl:message>
+  <wsdl:message name="ILoginRegistrationSrvc_RegisterFan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterFanResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILoginRegistrationSrvc_NewShow_InputMessage">
+    <wsdl:part name="parameters" element="tns:NewShow" />
+  </wsdl:message>
+  <wsdl:message name="ILoginRegistrationSrvc_NewShow_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NewShowResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILoginRegistrationSrvc_NewShowDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:NewShowDetail" />
+  </wsdl:message>
+  <wsdl:message name="ILoginRegistrationSrvc_NewShowDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NewShowDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILoginRegistrationSrvc_NewArtist_InputMessage">
+    <wsdl:part name="parameters" element="tns:NewArtist" />
+  </wsdl:message>
+  <wsdl:message name="ILoginRegistrationSrvc_NewArtist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NewArtistResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ILoginRegistrationSrvc">
+    <wsdl:operation name="LoginVenue">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILoginRegistrationSrvc/LoginVenue" message="tns:ILoginRegistrationSrvc_LoginVenue_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILoginRegistrationSrvc/LoginVenueResponse" message="tns:ILoginRegistrationSrvc_LoginVenue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterVenue">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILoginRegistrationSrvc/RegisterVenue" message="tns:ILoginRegistrationSrvc_RegisterVenue_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILoginRegistrationSrvc/RegisterVenueResponse" message="tns:ILoginRegistrationSrvc_RegisterVenue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginFan">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILoginRegistrationSrvc/LoginFan" message="tns:ILoginRegistrationSrvc_LoginFan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILoginRegistrationSrvc/LoginFanResponse" message="tns:ILoginRegistrationSrvc_LoginFan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterFan">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILoginRegistrationSrvc/RegisterFan" message="tns:ILoginRegistrationSrvc_RegisterFan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILoginRegistrationSrvc/RegisterFanResponse" message="tns:ILoginRegistrationSrvc_RegisterFan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NewShow">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILoginRegistrationSrvc/NewShow" message="tns:ILoginRegistrationSrvc_NewShow_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILoginRegistrationSrvc/NewShowResponse" message="tns:ILoginRegistrationSrvc_NewShow_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NewShowDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILoginRegistrationSrvc/NewShowDetail" message="tns:ILoginRegistrationSrvc_NewShowDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILoginRegistrationSrvc/NewShowDetailResponse" message="tns:ILoginRegistrationSrvc_NewShowDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NewArtist">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILoginRegistrationSrvc/NewArtist" message="tns:ILoginRegistrationSrvc_NewArtist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILoginRegistrationSrvc/NewArtistResponse" message="tns:ILoginRegistrationSrvc_NewArtist_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ILoginRegistrationSrvc" type="tns:ILoginRegistrationSrvc">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LoginVenue">
+      <soap:operation soapAction="http://tempuri.org/ILoginRegistrationSrvc/LoginVenue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterVenue">
+      <soap:operation soapAction="http://tempuri.org/ILoginRegistrationSrvc/RegisterVenue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginFan">
+      <soap:operation soapAction="http://tempuri.org/ILoginRegistrationSrvc/LoginFan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterFan">
+      <soap:operation soapAction="http://tempuri.org/ILoginRegistrationSrvc/RegisterFan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewShow">
+      <soap:operation soapAction="http://tempuri.org/ILoginRegistrationSrvc/NewShow" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewShowDetail">
+      <soap:operation soapAction="http://tempuri.org/ILoginRegistrationSrvc/NewShowDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewArtist">
+      <soap:operation soapAction="http://tempuri.org/ILoginRegistrationSrvc/NewArtist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LoginRegistrationSrvc">
+    <wsdl:port name="BasicHttpBinding_ILoginRegistrationSrvc" binding="tns:BasicHttpBinding_ILoginRegistrationSrvc">
+      <soap:address location="http://localhost:13363/LoginRegistrationSrvc.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
