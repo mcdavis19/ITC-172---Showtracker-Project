@@ -14,26 +14,26 @@
 </head>
 <body>
     <form id="form1" runat="server">
-
-        <div id="menu">
-            <asp:Menu ID="venueMenu" runat="server" class="menu" Orientation="Horizontal">
-                <Items>
-                    <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Venue Login" />
-                    <asp:MenuItem NavigateUrl="Register.aspx" Text="Venue Registration" />
-                    <asp:MenuItem NavigateUrl="AddNewShow.aspx" Text="Add New Show" />
-                    <asp:MenuItem NavigateUrl="AddNewArtist.aspx" Text="Add New Artist" />
-                </Items>
-                <StaticMenuItemStyle HorizontalPadding="20px" />
-            </asp:Menu>
-            <asp:Menu ID="fanMenu" runat="server" class="menu" Orientation="Horizontal">
-                <Items>
-                    <asp:MenuItem NavigateUrl="FanLogin.aspx" Text="Fan Login" />
-                    <asp:MenuItem NavigateUrl="FanRegistration.aspx" Text="Fan Registration" />
-                    <asp:MenuItem NavigateUrl="Listings.aspx" Text="Show and Artist Listings" />
-                    <asp:MenuItem NavigateUrl="FollowArtists.aspx" Text="Follow Artists" />
-                </Items>
-                <StaticMenuItemStyle HorizontalPadding="20px" />
-            </asp:Menu>
+    <div id="menu">
+    <asp:Menu ID="venueMenu" class="menu" runat="server" Orientation="Horizontal">
+         <Items>          
+            <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Venue Login"/> 
+             <asp:MenuItem NavigateUrl="Register.aspx" Text="Venue Registration"/>
+             <asp:MenuItem NavigateUrl="AddNewShow.aspx" Text="Add New Show"/>
+             <asp:MenuItem NavigateUrl="AddNewArtist.aspx" Text="Add New Artist"/>
+         </Items> 
+        <StaticMenuItemStyle HorizontalPadding="55px" />    
+    </asp:Menu>
+    <asp:Menu ID="fanMenu" class="menu" runat="server" Orientation="Horizontal">
+        <Items>     
+             <asp:MenuItem NavigateUrl="FanLogin.aspx" Text="Fan Login"/>
+             <asp:MenuItem NavigateUrl="FanRegistration.aspx" Text="Fan Registration"/>
+             <asp:MenuItem NavigateUrl="Listings.aspx" Text="Show and Artist Listings"/>
+             <asp:MenuItem NavigateUrl="FollowArtists.aspx" Text="Follow Artists"/>
+            <asp:MenuItem NavigateUrl="ShowsByFanArtist.aspx" Text="Your Artists' Shows"/>
+        </Items>
+        <StaticMenuItemStyle HorizontalPadding="35px" />     
+    </asp:Menu>
         </div>
 
     <div>
